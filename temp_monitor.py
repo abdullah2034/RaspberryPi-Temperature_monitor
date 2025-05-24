@@ -2,6 +2,7 @@
 """
 Raspberry Pi Temperature Monitor
 Logs CPU temperature every minute to date-wise CSV files and an overall CSV file
+Please must replace your username below on line 14
 """
 
 import os
@@ -10,7 +11,7 @@ import time
 from datetime import datetime
 
 # Configuration
-LOG_DIR = "/home/pi/temp_logs"  # Directory to store CSV files
+LOG_DIR = "/home/REPLACE_WITH_YOUR_USERNAME/temp_logs"  # Directory to store CSV files
 TEMP_FILE = "/sys/class/thermal/thermal_zone0/temp"  # Pi temperature file
 
 def get_cpu_temperature():
